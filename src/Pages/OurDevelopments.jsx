@@ -23,6 +23,21 @@ function OurDevelopments() {
           <div className="row justify-content-center align-items-center">
             <div className="col-md-12 text-center">
               <h3 style={{ color: "grey" }} >Find Your Property</h3>
+              <FormControl fullWidth className='mt-4'>
+                <InputLabel id="location-select-label">Location</InputLabel>
+                <Select
+                  labelId="location-select-label"
+                  id="location-select"
+                  // value={age}
+                  label="Property type"
+                // onChange={handleChange}
+                >
+                  <MenuItem value={10}>Ten</MenuItem>
+                  <MenuItem value={20}>Twenty</MenuItem>
+                  <MenuItem value={30}>Thirty</MenuItem>
+                </Select>
+
+              </FormControl>
 
               <FormControl fullWidth className='mt-4'>
                 <InputLabel id="demo-simple-select-label">Property type</InputLabel>
@@ -94,7 +109,7 @@ function OurDevelopments() {
           </div>
         </div>
 
-        <div className="col-lg-9 col-md-8 col-sm-12 p-5 bg-danger">
+        <div className="col-lg-9 col-md-8 col-sm-12 p-5">
           <div className="slider-container">
             <Slider {...settings}>
               <div className='p-2'>
