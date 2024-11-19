@@ -5,6 +5,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 function Footer() {
   return (
     <>   
@@ -14,7 +17,7 @@ function Footer() {
           <div className="row">
             <div className="col-xl-4 col-md-4 mb-30">
               <div className="single-cta">
-                <i className="fas fa-map-marker-alt"></i>
+                <LocationOnIcon className="fas fa-map-marker-alt" />
                 <div className="cta-text">
                   <h4>Find us</h4>
                   <span>Egypt, Giza, Haram street</span>
@@ -23,7 +26,7 @@ function Footer() {
             </div>
             <div className="col-xl-4 col-md-4 mb-30">
               <div className="single-cta">
-                <i className="fas fa-phone"></i>
+                <PhoneInTalkIcon className="fas fa-phone"/>
                 <div className="cta-text">
                   <h4>Call us</h4>
                   <span>01007788997</span>
@@ -32,7 +35,7 @@ function Footer() {
             </div>
             <div className="col-xl-4 col-md-4 mb-30">
               <div className="single-cta">
-                <i className="fas fa-mail-bulk"></i>
+                <EmailIcon className="fas fa-mail-bulk" />
                 <div className="cta-text">
                   <h4>Mail us</h4>
                   <span>habosa2000@hotmail.com</span>

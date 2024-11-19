@@ -58,7 +58,7 @@ function OurDevelopments() {
 
               <div className="Area mt-4">
                 <InputLabel id="slider-label" >Area</InputLabel>
-                <SliderArea labelId="slider-label" defaultValue={700} min={70} max={500} aria-label="Default" valueLabelDisplay="auto" />
+                <SliderArea labelId="slider-label" defaultValue={700} min={70} max={500} aria-label="Default" valueLabelFormat={(val) => `${val} m²`} valueLabelDisplay="auto" />
               </div>
 
 
@@ -97,7 +97,7 @@ function OurDevelopments() {
 
               <div className="Price mt-4">
                 <InputLabel id="slider-label" >Price</InputLabel>
-                <SliderArea labelId="slider-label" defaultValue={700} min={2000000} max={20000000} aria-label="Default" valueLabelDisplay="auto" />
+                <SliderArea labelId="slider-label" defaultValue={700} min={2000000} max={20000000} aria-label="Default" valueLabelFormat={(val) => `${val} EGP`} valueLabelDisplay="auto" />
               </div>
 
               {/* <button className='btn btn-outline-primary p-2'>Outlined</button> */}

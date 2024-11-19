@@ -4,7 +4,6 @@ import sora from "../assets/imgs/construction.jfif"
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { rgbToHex } from '@mui/material';
 
 function Construction() {
 
