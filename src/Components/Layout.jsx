@@ -5,8 +5,10 @@ import {Outlet} from 'react-router-dom'
 function Layout() {
     return (
         <>
-            <Navbar />
-                <Outlet></Outlet> 
+            <Navbar/>
+            <div className="container my-5">
+                 <Outlet></Outlet> 
+            </div>
             <Footer />
         </>
     )

@@ -1,0 +1,68 @@
+.headerImage{
+    background-color: red;
+}
+.header{
+    position: relative;
+    height: 25rem;
+    overflow: hidden;
+}
+.headlineLayer{
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    right:0pc;
+    bottom: 0px;
+    opacity: 0.5;
+
+}
+.headerLineText{
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+
+}
+
+.sectionHeaderLine{
+    margin: 16px;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2rem;
+
+}
+
+.sectionText{
+    margin: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    /* line-height: 2rem; */
+}
+body{
+    padding: 0px;
+    margin: 0px;;
+}
+
+.SectionTextContainer{
+    margin: 20px 0px 20px 0px;
+    border-bottom: 2px solid rgba(163, 141, 141, 0.5);
+
+}
+
+.colordSection{
+    width: 100%;
+    background-color: #FAE9E3;
+    flex-direction: column;
+    margin: 50px 0px 50px 0px;
+    padding: 100px 0px 100px 0px;
+}
+
+.btn-planning{
+    font-size: 200px;
+}
+#btn-planning{
+    font-weight: 800;
+    border-radius: 10%;
+}
