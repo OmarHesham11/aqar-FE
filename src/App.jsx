@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import OurDevelopments from './Pages/OurDevelopments';
+import NotFound from './Pages/NotFound';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
           { path: "/", element: <Home /> },
           { path: "/about", element: <About /> },
           { path: "/construction", element: <Construction /> },
-          { path: "/developments", element: <OurDevelopments /> }
+          { path: "/developments", element: <OurDevelopments /> },
+          { path: "*", element: <NotFound /> }
         ]
     }
   ]);

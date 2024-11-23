@@ -1,9 +1,12 @@
+import {useEffect,useState} from 'react';
+
 import {
   FormControl, InputLabel, Select, MenuItem, Slider as SliderArea, Button,
   CardMedia, CardActionArea, Card
 } from '@mui/material';
 import Slider from 'react-slick';
 import img from "../assets/imgs/construction.jfif";
+import axios from 'axios';
 const settings = {
   className: "center",
   centerMode: true,
@@ -15,7 +18,20 @@ const settings = {
   slidesPerRow: 2
 };
 
-function OurDevelopments() {
+function OurDevelopments(){
+
+   const [developments,setDevelopments] = useState([]) ; 
+
+  const getDevelopments = async()=>{
+        let {response} = await axios()  ;
+        console.log(response);
+        return response ; 
+  }
+
+  useEffect(()=>{
+    setDevelopments(getDevelopments()) ; 
+    //calling Apis to get ((( developments Array ))) to use at dataBinding
+  },[])
   return (
     <>
       <div className="row justify-content-center align-items-center ">
